@@ -19,7 +19,7 @@ connectDB();
 const app = express();
 
 //middelwares
-const _filename = fileURLToPath(import.meta.url);
+const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 console.log(__dirname);
 app.use(cors());
